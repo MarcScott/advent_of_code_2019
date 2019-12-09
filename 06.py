@@ -32,4 +32,4 @@ def trace_route(planet, route):
         route.append(planet)
         return trace_route(orbit_map_dict[planet], route)
 
-transefers = len(set(trace_route("YOU", []))^set(trace_route("SAN", []))) - 2
+transfers = len(set(trace_route("YOU", [])) ^ set(trace_route("SAN", []))) - 2
